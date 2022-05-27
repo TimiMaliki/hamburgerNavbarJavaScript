@@ -20,3 +20,13 @@ a[20] = 75;
 
 console.log(a.length);
 
+let a = [4,12,3,4,4,5];
+
+a[20] = 75;
+
+a.push(95);
+console.log(a.length);
+a.pop(3);
+a.pop(1);
+a.pop(0);
+console.log(a.length);
