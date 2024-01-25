@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.navbar {
+    padding: 19px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition: 0.5s;
+}
+
+.brand {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0px 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+a:hover {
+    color: #111;
+}
+.dark{
+    color: #fff;
+}
+
+.darkTheme{
+    background: #000;
+    color: #fff;
+}
+
+
+
+.nav__toggle {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.darkmode {
+    position: absolute;
+    top: 29%;
+    right: 20%;
+    width: 80px;
+    height: 35px;
+    border-radius: 160px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    border: 1px solid #f4f4f4;
+}
+
+.bx-moon {
+    font-size: 24px;
+    position: absolute;
+    top: 10%;
+    right: 60%;
+    color: #000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+ .activate{
+   position: absolute;
+   right: 10%;
+   transition: all 0.5s;
+}
+
+
+/*================ HERO ===============*/
+.hero{
+    width: 100%;
+    height: 500px;
+    background-image: url("../../assets/imagies/clouds.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-night{
+    width: 100%;
+    height: 700px;
+    background-image: url("../../assets/imagies/night-ocean.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.birds{
+    width: 270px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    object-fit: contain;
+    background-image: url("../../assets/imagies/beautiful-water-birds-mangroves-sundarban-national-park-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: MyDiv;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in infinite;
+    animation-direction: normal;    
+}
+
+.ship{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    object-fit: contain;
+    background-image: url("../../assets/imagies/transport_12937383.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: MyBoat;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in infinite;
+    animation-direction: normal;    
+}
+
+  
+
+/* KEYFRAMES */
+@keyframes MyDiv {
+    0% {
+        left: 80%;
+        top: 40%;
+    }
+
+    100% {
+        left: 0%;
+        top: 10%;
+    }
+}
+@keyframes MyBoat {
+    100% {
+      left: 190vmin;
+    }
+  }
+  @media(max-width:420px) {
+    .ship{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        transform: translateY(120px);
+    }
+  }
+@media(max-width:900px) {
+    .nav__toggle {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .nav__menu {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        height: 0vh;
+        background: #fff;
+        color: #000;
+        margin-top: 2.5rem;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .nav__menu.active {
+        height: 300px;
+    }
+    
+
+    ul {
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .bx-menu {
+        font-size: 32px;
+    }
+    .ship{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 40%;
+        left: 0%;
+    }
+    @keyframes MyDiv {
+        0% {
+            left: 40%;
+            top: 27%;
+        }
+    
+        100% {
+            left: 0%;
+            top: 0%;
+        }
+    }
+    @keyframes MyBoat {
+        100% {
+          left: 90vmin;
+        }
+      }
+    
+}
