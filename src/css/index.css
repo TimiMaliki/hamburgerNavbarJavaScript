@@ -159,7 +159,7 @@ a:hover {
 /* KEYFRAMES */
 @keyframes MyDiv {
     0% {
-        left: 80%;
+        left: 60%;
         top: 40%;
     }
 
@@ -180,7 +180,13 @@ a:hover {
         position: absolute;
         transform: translateY(120px);
     }
+    .birds{
+        width: 270px;
+        height: 50px;
+        position: absolute;
+        transform: translateX(-100px);
   }
+}
 @media(max-width:900px) {
     .nav__toggle {
         visibility: visible;
