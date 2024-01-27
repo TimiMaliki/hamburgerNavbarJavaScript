@@ -148,7 +148,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     animation: MyBoat;
-    animation-duration: 50s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in infinite;
     animation-direction: normal;    
@@ -170,7 +170,7 @@ a:hover {
 }
 @keyframes MyBoat {
     100% {
-      left: 190vmin;
+      left: 60vmin;
     }
   }
   @media(max-width:420px) {
